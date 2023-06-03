@@ -1,0 +1,14 @@
+to find the sum of first and last digit of a number 
+
+first and last is the question ?
+
+number can be different means may be some number is like 1000 and some be like 10000
+
+so what to do 
+
+we can use while loop here and solve this problem 
+
+num  = 23243
+
+while(num)
+
