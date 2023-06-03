@@ -49,8 +49,8 @@ int main()
 
     bubblesort(arr, n);
 
-    cout << endl
-         << "the sorted array after bubble sorting is :" << endl;
+    cout << endl<< "the sorted array after bubble sorting is :" << endl;
+    
     printbubble(arr, n);
 
     return 0;
