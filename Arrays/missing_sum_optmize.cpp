@@ -6,6 +6,7 @@ int missingNumber(vector<int> &nums)
 
     int sum = 0;
     int n = nums.size();
+    cout<<n;
 
     for (int i = 0; i < n; i++)
     {
