@@ -25,13 +25,20 @@ vector<int> twoSum(vector<int> &nums, int target)
 int main()
 {
 
-    vector<int>arr = {2,7,11,15};
+    vector<int> arr = {2, 7, 11, 15};
     int target = 9;
 
-    vector<int>ans = twoSum(arr , target);
+    vector<int> ans = twoSum(arr, target);
 
     for (int i = 0; i < ans.size(); i++)
         cout << ans[i] << " ";
 
     return 0;
 }
+
+
+// TIME AND SPACE COMPLEXITY
+
+//T.C = O(N * LOGN)
+
+//S.C = O(N)
