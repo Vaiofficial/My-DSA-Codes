@@ -1,44 +1,41 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> twoSum(vector<int> &nums, int target)
+static bool cmp(pair<int, int> &a, pair<int, int> &b)
 {
+    return a.first < b.first;
+}
 
-    int left = 0;
-    int right = nums.size() - 1;
+vector<pair<int, int>> allPairs(int A[], int B[], int N, int M, int X)
+{
+    // Your code goes here
 
-    // sort(nums.begin() , nums.end());
+    vector<pair<int, int>> ans;
+    unordered_set<int> s;
 
-    while (left < right)
+    for (int i = 0; i < N; i++)
     {
-        int sum = nums[left] + nums[right];
+        s.insert(A[i]);
+    }
 
-        if (sum == target)
+    for (int i = 0; i < M; i++)
+    {
+        if (s.find(X - B[i]) != s.end())
         {
-            return {left, right};
-        }
-        else if (sum < target)
-        {
-            left++;
-        }
-        else
-        {
-            right--;
+            ans.push_back({X - B[i], B[i]});
         }
     }
-    return {-1, -1};
+
+    sort(ans.begin(), ans.end(), cmp);
+    return ans;
 }
 
 int main()
 {
 
-    vector<int>nums = {2,7,11,15};
-    int target = 9;
-
-    vector<int> ans = twoSum(nums, target);
-
-    for (int i = 0; i < ans.size(); i++)
-        cout << ans[i] << " ";
+    int A[] = {1, 2, 4, 5, 7};
+    int B[] = {5, 6, 3, 4, 8};
+    int X = 9, N = 5 ,M = 5;
 
 
     return 0;
