@@ -37,3 +37,9 @@ int main()
 
     return 0;
 }
+
+//TIME AD SPACE COMPLEXITY 
+
+//T.C = O(N) AS WE ARE USING 1 FOR LOOPS.
+
+// S.C = O(1) AS WE ARE NOT USING ANY EXTRA SPACE.
