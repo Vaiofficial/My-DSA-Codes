@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void stockBuySell(int price[], int n)
+int stockBuySell(int price[], int n)
 {
     // code here
 
@@ -19,6 +19,7 @@ void stockBuySell(int price[], int n)
     }
 
     return maxPro;
+}
 
     int main()
     {
@@ -26,6 +27,8 @@ void stockBuySell(int price[], int n)
         int n = 6;
 
         int ans = stockBuySell(arr , n);
+
+        cout<<"the max profit is :"<<ans;
 
         return 0;
     }
