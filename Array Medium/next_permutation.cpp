@@ -54,7 +54,7 @@ int main()
 
     for(auto it:arr)
     {
-        cout<<it<<" ";
+        cout<<it<<" ";vcvvvvvmm
     }
     return 0;
 }

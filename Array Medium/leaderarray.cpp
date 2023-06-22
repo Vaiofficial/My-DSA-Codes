@@ -44,3 +44,9 @@ int main()
 
     return 0;
 }
+
+
+//Time complexity and space complexity
+
+//T.C - O(^2) AS WE ARE USING TWO FOR LOOPS , ONE FOR OUTER LOOP AND ONE FOR INNER LOOP
+//S.C - AS WE ARE NOT USING ANY EXTRA SPACE.
