@@ -44,8 +44,8 @@ vector<vector<int>> fourSum(vector<int>& nums, int target)
             {
                 l++;
             }
-            
-            else{
+            else
+            {
                 h--;
             }
 
@@ -61,7 +61,8 @@ int main()
   vector<int> nums = {4, 3, 3, 4, 4, 2, 1, 2, 1, 1};
     int target = 9;
     vector<vector<int>> ans = fourSum(nums, target);
-    cout << "The quadruplets are: \n";
+   
+
     for (auto it : ans) {
         cout << "[";
         for (auto ele : it) {
